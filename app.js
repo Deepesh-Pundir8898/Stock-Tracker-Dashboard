@@ -63,7 +63,7 @@ function updateTable(symbol, stockDetails) {
   const previousData = stockDetails[1];
   const priceChange = (latestData.close - previousData.close).toFixed(2);
 
-  stockInfo.innerHTML += `
+  stockInfo.innerHTML = `
 
       <h2>${symbol}</h2>
       <p>Price : ${latestData.close.toFixed(2)}</p>
